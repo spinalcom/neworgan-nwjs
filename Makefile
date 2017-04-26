@@ -3,13 +3,13 @@ all:
 
 update:
 	npm install spinalcore
-	npm install nwjs
+	npm install nw
 
 run:
-	./node_modules/nwjs/nw .
+	./node_modules/.bin/nw .
 
 stop:
-	kill -9 $$( pgrep -f "./node_modules/nwjs/nw ." )
+	kill -9 $$( pgrep -f "./node_modules/.bin/nw ." )
 
 .PHONY: all update run stop
 
