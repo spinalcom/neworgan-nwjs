@@ -11,6 +11,9 @@ run:
 stop:
 	kill -9 $$( pgrep -f "./node_modules/.bin/nw ." )
 
-.PHONY: all update run stop
+init:
+	@true
+
+.PHONY: all update run stop init
 
 
